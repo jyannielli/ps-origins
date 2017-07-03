@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<title>Princeton University Student Origins (1748-1865)</title>
+<meta name="description" content="An interactive heat map of the origins of students who attended Princeton University between 1748 and 1865">
+<meta charset="utf-8">
+
+<style>
+h1 {
+	font-size: 2rem;
+	margin: 20px 0 20px 0;
+}
+path {
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+.background {
+	fill: none;
+	pointer-events: all;
+}
+.coast {
+	fill: none;
+	stroke: #555;
+	stroke-width: 0.9;
+}
+.unit {
+	fill: none;
+	stroke: #222;
+	cursor: pointer;
+	visibility: hidden;
+	display: none;
+	stroke-width: 1.0;
+}
+.active {
+	visibility: visible;
+	display: inline;
+}
+
+.template {display:none;}
+
+.tooltip {
+	color: #222;
+	background: #fff;
+	padding: .25em;
+	text-shadow: #f5f5f5 0 1px 0;
+	border-radius: 10px;
+	border-color: #a6a6a6;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: 0px 0px 2px 0px #a6a6a6; 
+	opacity: 0.85; 
+	position: absolute;
+	width: 200px;
+	display: block;
+}
+.tooltip h5 {
+	font-size: 0.95rem;
+}
+
+.tooltip p {
+	font-size: 0.80rem;
+}
+
+.exp-label {
+}
+
+.n-label {
+}
+
+.s-label {
+}
+
+.legend {
+	box-shadow: 0px 0px 2px 0px #a6a6a6;
+	fill: #fff;
+	stroke: #000;
+}
+
+.hidden {
+	display: none;
+	box-shadow: none;
+}
+.axis {
+	font: 10px sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.axis .domain {
+	fill: none;
+	stroke: #000;
+	stroke-opacity: .3;
+	stroke-width: 10px;
+	stroke-linecap: round;
+}
+
+.axis .halo {
+	fill: none;
+	stroke: #ddd;
+	stroke-width: 8px;
+	stroke-linecap: round;
+}
+
+.slider .handle {
+	fill: rgba(0,0,0,0);
+	stroke: #000;
+	stroke-opacity: .5;
+	stroke-width: 11px;
+	width: 2px;
+	pointer-events: none;
+}
+body #back-link {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 5px;
+}
+.map-label {
+	font-size: 15px;
+}
+
+.slider-handle-icon {
+	width: 14px;
+	height: 14px;
+	border: solid 1px #aaa;
+	position: absolute;
+	border-radius: 0px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	top: -7px;
+	left: -7px;
+}
+
+.slider-handle {
+	position: absolute;
+	top: 3px;
+}
+</style>
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/queue.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="row">
+  <h1>Princeton University Student Origins (1748-1865)</h1>
+  <div id="viz"></div>
+  <div id="slider"></div>
+</div>
+<script src="visualization.js"></script>
+
+</body>
+</html>
