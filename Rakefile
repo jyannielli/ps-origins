@@ -19,7 +19,7 @@ file "us.json" => ["US_AtlasHCB_StateTerr_Gen05"] do
   system %[topojson -e students.csv --id-property ID -p -o us.json \
   states=US_AtlasHCB_StateTerr_Gen05/US_HistStateTerr_Gen05_Shapefile/US_HistStateTerr_Gen05.shp]
   # adjust original thirteen start time
-  system %[sed -i "s/1783-09-03/1748-01-01/g" us.json]
+  system %[sed -i "s/1784-04-21/1748-01-01/g" us.json]
 end
 
 # Coastline
