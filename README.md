@@ -12,7 +12,9 @@
 
 <code>rake</code>, <code>ogr2ogr</code>, <code>unzip</code>, and <code>nodejs</code> can be installed via the package manager.
 
-<code>topojson</code> must be installed via <code>nodejs</code> (<code>npm -g topojson@1</code>); <code>xlsx</code> is also installed via <code>nodejs</code>.
+<code>topojson</code> must be installed via <code>nodejs</code> (<code>npm install -g topojson@1</code>); <code>xlsx</code> is also installed via <code>nodejs</code> (<code>npm install -g xlsx</code>).
+
+Note: on Ubuntu, you may need <code>apt-get install nodejs-legacy</code>.
 
 The name of the student data spreadsheet must be correctly specified in the Rakefile.
 
