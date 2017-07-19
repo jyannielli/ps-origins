@@ -31,7 +31,6 @@ var legendScaleColors=[[255,240,230],[255,150,0]];
 var legendCornerRadius=10;
 var legendDateFormat=d3.time.format("%Y");
 
-
 //// derived variables
 
 // map elements
@@ -69,7 +68,6 @@ var slider_svg = d3.select("#slider").append("svg")
 .attr("preserveAspectRatio", "xMinYMin meet")
 .attr("viewBox", "-20 -10 960 40")
 .classed("svg-content", true);
-
 
 // create tooltip
 var tooltip = d3.select("#viz").append("div")
