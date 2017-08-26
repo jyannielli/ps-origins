@@ -24,5 +24,5 @@ Styling is done via the <code>index.html</code> file (could be moved to a dedica
 
 Modifications to the size of the map, positioning of elements, etc is done via the variables at the top of the <code>visualization.js</code> file.
 
-Based on the "Historical Boundaries of the United States" project by Lincoln A. Mullen (http://lincolnmullen.com/projects/us-boundaries/)
+Based on the "Historical Boundaries of the United States" project by Lincoln A. Mullen (http://lincolnmullen.com/projects/us-boundaries/).
 Created for the Princeton & Slavery project.
